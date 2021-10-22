@@ -7,9 +7,9 @@
 # include <stdlib.h>
 
 char	*get_next_line(int fd);
-char 	*gnl_change_buffer(char *line, char *buffer);
+char	*gnl_change_buffer(char *line, char *buffer);
 void	*gnl_memmove(void *dst, const void *src, size_t len);
-size_t	gnl_strlen(char *str);
-// void	gnl_bzero(char *str);
+size_t	gnl_strlen(char *str, int bool);
+void	gnl_bzero(char	*str, size_t i);
 
 #endif
